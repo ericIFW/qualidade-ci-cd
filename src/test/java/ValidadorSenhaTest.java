@@ -7,8 +7,14 @@ public class ValidadorSenhaTest {
 
     @Test
     void senhaComSeteCaracteresEhInvalida() {
+        // Arrange
         var validador = new ValidadorSenha();
-        assertFalse(validador.validar("Abcde12"));
+
+        // Act
+        boolean senhaEhValida = validador.validar("Abcde12");
+
+        // Assert
+        assertFalse(senhaEhValida);
     }
 
 }
