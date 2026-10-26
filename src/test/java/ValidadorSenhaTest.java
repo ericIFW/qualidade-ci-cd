@@ -58,7 +58,7 @@ public class ValidadorSenhaTest {
     void senhaComMaisDe256CaracteresEhInvalida() {
         // Arrange
         var validador = new ValidadorSenha();
-        String senha = "111" + "a".repeat(256);
+        String senha = "111A" + "a".repeat(256);
 
         // Act
         boolean senhaEhValida = validador.validar(senha);
